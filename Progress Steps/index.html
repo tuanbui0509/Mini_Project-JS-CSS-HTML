@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +8,43 @@
     <title>Progress Steps</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
 
     <div class="container">
         <div class="progress-container">
             <div class="progress" id="progress"></div>
-            <div class="circle active">1</div>
-            <div class="circle">2</div>
-            <div class="circle">3</div>
-            <div class="circle">4</div>
+            <div class="circles">
+                <div class="circle active"><img src="./icon/document.svg" alt=""></div>
+                <span class="circle-title">Đơn hàng đã đặt</span>
+            </div>
+            <div class="circles">
+                <div class="circle"><img src="./icon/money.svg" alt=""></div>
+                <span class="circle-title">Đã xác nhận thông tin thanh toán</span>
+
+            </div>
+            <div class="circles">
+                <div class="circle"><img src="./icon/van.svg" alt=""></div>
+                <span class="circle-title">Chờ lấy hàng</span>
+
+            </div>
+            <div class="circles">
+                <div class="circle"><img src="./icon/delivery-box.svg" alt=""></div>
+                <span class="circle-title">Đang giao</span>
+
+            </div>
+            <div class="circles">
+                <div class="circle"><img src="./icon/star.svg" alt=""></div>
+                <span class="circle-title">Đánh giá</span>
+
+            </div>
         </div>
+
 
         <button class="btn" id="prev" disabled>Prev</button>
         <button class="btn" id="next">Next</button>
     </div>
     <script src="./main.js"></script>
 </body>
+
 </html>

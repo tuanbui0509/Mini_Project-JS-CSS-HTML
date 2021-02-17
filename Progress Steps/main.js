@@ -3,6 +3,11 @@ const prev = document.getElementById('prev')
 const next = document.getElementById('next')
 const circles = document.querySelectorAll('.circle')
 
+console.log(progress)
+console.log(prev)
+console.log(next)
+console.log(circles)
+
 
 let currentActive = 1;
 next.addEventListener('click', () => {
